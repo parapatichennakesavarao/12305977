@@ -5,7 +5,7 @@ import time
 
 app = FastAPI()
 
-# Logging Middleware
+
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
 
